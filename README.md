@@ -1,12 +1,7 @@
-Bangle.js App Loader (and Apps)
+Persvicx's Custom Bangle.js App Loader (and Apps)
 ================================
 
-[![Build Status](https://github.com/espruino/BangleApps/actions/workflows/nodejs.yml/badge.svg)](https://github.com/espruino/BangleApps/actions/workflows/nodejs.yml)
-
-* Try the **release version** at [banglejs.com/apps](https://banglejs.com/apps)
-* Try the **development version** at [espruino.github.io](https://espruino.github.io/BangleApps/)
-
-The release version is manually refreshed with regular intervals while the development version is continuously updated as new code is committed to this repository.
+This build contains apps that are made by Persvicx. For the offical repository, please visit [this website](https://banglejs.com/apps).
 
 **All software (including apps) in this repository is MIT Licensed - see [LICENSE](LICENSE)** By
 submitting code to this repository you confirm that you are happy with it being MIT licensed,
