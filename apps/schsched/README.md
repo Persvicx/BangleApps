@@ -1,23 +1,11 @@
-# School Tools
+# School Schedule
 
-Coming soon
+A app to let you see your school classes.
 
 ## Usage
 
-Describe how to use it
-
-## Features
-
-Name the function
-
-## Controls
-
-Name the buttons and what they are used for
-
-## Requests
-
-businesspersvicxyt@gmail.com
+Load up a JSON file to your watch named schsched.json and include class data.
 
 ## Creator
-
+businesspersvicxyt@gmail.com
 Aech / Persvicx
