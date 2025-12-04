@@ -1,14 +1,14 @@
-{ "id": "schtool",
-  "name": "School Tools",
-  "shortName":"Short Name",
+{ "id": "schsched",
+  "name": "School Schedule",
+  "shortName":"School Sched",
   "version":"0.01",
-  "description": "A app to let you simply check your class times and info, and more.",
+  "description": "A app to let you simply check your class times and info.",
   "icon": "app.png",
   "tags": "",
   "supports" : ["BANGLEJS2"],
   "readme": "README.md",
   "storage": [
-    {"name":"schtool.app.js","url":"app.js"},
-    {"name":"schtool.img","url":"app-icon.js","evaluate":true}
+    {"name":"schsched.app.js","url":"app.js"},
+    {"name":"schsched.img","url":"app-icon.js","evaluate":true}
   ]
 }
