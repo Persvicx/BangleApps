@@ -22,12 +22,12 @@ function getStatus(start, end) {
   const now = Date().getHours() * 60 + Date().getMinutes();
 
   if (now < start) {
-    return { msg: "start " + (start - now) + "min", diff: start - now };
+    return { msg: "starts " + (start - now) + "min", diff: start - now };
   }
   if (now > end) {
-    return { msg: "ended " + (now - end) + "min", diff: now - end };
+    return { msg: "ended " + (now - end) + "min ago", diff: now - end };
   }
-  return { msg: "end " + (end - now) + "min", diff: end - now };
+  return { msg: "end in " + (end - now) + "min", diff: end - now };
 }
 function showClassDetails(c) {
   require("widget_utils").hide();
