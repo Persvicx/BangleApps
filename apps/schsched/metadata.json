@@ -4,7 +4,7 @@
   "version":"0.01",
   "description": "A app to let you simply check your class times and info.",
   "icon": "app.png",
-  "tags": "",
+  "tags": "tool",
   "supports" : ["BANGLEJS2"],
   "readme": "README.md",
   "storage": [
