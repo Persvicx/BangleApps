@@ -11,6 +11,6 @@
   "storage": [
     {"name":"schsched.app.js","url":"app.js"},
     {"name":"schsched.img","url":"app-icon.js","evaluate":true}
-  ]
+  ],
   "data": [{"name":"schsched.json"}]
 }
