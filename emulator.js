@@ -89,7 +89,7 @@ function startEmulator() {
 
         var emuDevice = CHOSENDEVICE;
         if (!CHOSENDEVICE.id)
-          CHOSENDEVICE = DEVICEINFO.find(d=>d.id.startsWith("BANGLEJS2")); /* default */
+          CHOSENDEVICE = DEVICEINFO.find(d=>d.id.startsWith("BANGLEJS3")); /* default */
 
         var url;/* = window.location.pathname;
         if (url.includes("/"))
