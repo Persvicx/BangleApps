@@ -1,0 +1,28 @@
+{
+  "classes": [
+    {
+      "name": "Class 1",
+      "room": "ABC123",
+      "start": "8:05",
+      "end": "9:00",
+      "teacher": "Mr. Teacher",
+      "extra": "Bring notebook and don't forget bookbag"
+    },
+    {
+      "name": "Class 2",
+      "room": "DEF456",
+      "start": "9:05",
+      "end": "9:54",
+      "teacher": "Mrs. Teacher",
+      "extra": "Charge Computer"
+    },
+    {
+      "name": "Class 3",
+      "room": "GHI789",
+      "start": "9:59",
+      "end": "15:00",
+      "teacher": "Mr. Teacher, Mrs. Teacher",
+      "extra": ""
+    }
+  ]
+}
