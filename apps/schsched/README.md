@@ -1,11 +1,13 @@
 # School Schedule
 
-A app to let you see your school classes.
+A app to let you see your classes, with nice time calcuation for the start, in and end times.
 
 ## Usage
 
-Load up a JSON file to your watch named schsched.json and include class data.
+Use the interface after installing the app to add classes to the schedule.
 
 ## Creator
+
 businesspersvicxyt@gmail.com
 Aech / Persvicx
+

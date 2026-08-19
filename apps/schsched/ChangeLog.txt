@@ -1,1 +1,2 @@
-0.01: Working on the actual application
+0.02: Fixed .json loading and interface changes
+0.01: New App!

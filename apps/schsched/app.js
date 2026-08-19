@@ -1,16 +1,24 @@
 Bangle.loadWidgets();
 Bangle.drawWidgets();
+
 let classes = [];
+
 function loadSchedule() {
   try {
     const txt = require("Storage").read("schsched.json");
-    if (!txt) load();
+    if (!txt) {
+      E.showAlert("No schedule data found!", "Error").then(() => load());
+      return;
+    }
     const data = JSON.parse(txt);
     classes = data.classes || [];
+
+    classMainMenu();
   } catch (e) {
-    classes = [];
+    E.showAlert("Failed to load schedule!", "Error").then(() => load());
   }
 }
+
 function parseHM(t) {
   const parts = t.split(":");
   const h = parseInt(parts[0]);
@@ -22,13 +30,14 @@ function getStatus(start, end) {
   const now = Date().getHours() * 60 + Date().getMinutes();
 
   if (now < start) {
-    return { msg: "starts " + (start - now) + "min", diff: start - now };
+    return { msg: "in " + (start - now) + "min", diff: start - now };
   }
   if (now > end) {
-    return { msg: "ended " + (now - end) + "min ago", diff: now - end };
+    return { msg: "" + (now - end) + "min ago", diff: now - end };
   }
   return { msg: "end in " + (end - now) + "min", diff: end - now };
 }
+
 function showClassDetails(c) {
   require("widget_utils").hide();
 
@@ -38,7 +47,7 @@ function showClassDetails(c) {
 
   let text =
     c.name + "\n" +
-    "Room: " + c.room + "\n" +
+    (c.room ? "Room: " + c.room + "\n" : "") +
     c.start + "-" + c.end + "\n" +
     c.teacher + "\n" +
     st.msg + "\n" +
@@ -51,6 +60,7 @@ function showClassDetails(c) {
 function buildMenu() {
   const menu = {
     "" : { title: "Classes" },
+    '< Back': () => load(),
   };
 
   classes.forEach(function(c) {
@@ -59,8 +69,7 @@ function buildMenu() {
     const st = getStatus(start, end);
 
     const label =
-      c.name + "\n" +
-      c.start + "-" + c.end + ", " + st.msg;
+      c.name + ", " + st.msg + "\n" + c.start + "-" + c.end;
 
     menu[label] = function() {
       showClassDetails(c);
@@ -76,4 +85,3 @@ function classMainMenu() {
 }
 
 loadSchedule();
-classMainMenu();
