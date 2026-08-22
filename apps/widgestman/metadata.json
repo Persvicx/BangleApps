@@ -1,0 +1,15 @@
+{ "id": "widgestman",
+  "name": "aiGesture Manager",
+  "shortName":"Gesture Man",
+  "version":"0.01",
+  "author": "persvicx",
+  "description": "Helper widget for detection and usage from aiGestures.",
+  "icon": "icon.png",
+  "type": "widget",
+  "tags": "widget",
+  "supports" : ["BANGLEJS2"],
+  "readme": "README.md",
+  "storage": [
+    {"name":"gestman.wid.js","url":"widget.js"}
+  ]
+}
